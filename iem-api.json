@@ -1,0 +1,119 @@
+
+us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-api:api_dev_v1.0.0_69e63c8 (alpine 3.20.2)
+=============================================================================================
+Total: 5 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 0, CRITICAL: 3)
+
+┌────────────┬────────────────┬──────────┬───────────────────┬───────────────┬─────────────────────────────────────────────────────────────┐
+│  Library   │ Vulnerability  │ Severity │ Installed Version │ Fixed Version │                            Title                            │
+├────────────┼────────────────┼──────────┼───────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libcrypto3 │ CVE-2024-6119  │ MEDIUM   │ 3.3.1-r3          │ 3.3.2-r0      │ openssl: Possible denial of service in X.509 name checks    │
+│            │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2024-6119                   │
+├────────────┼────────────────┼──────────┼───────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libexpat   │ CVE-2024-45490 │ CRITICAL │ 2.6.2-r0          │ 2.6.3-r0      │ libexpat: Negative Length Parsing Vulnerability in libexpat │
+│            │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2024-45490                  │
+│            ├────────────────┤          │                   │               ├─────────────────────────────────────────────────────────────┤
+│            │ CVE-2024-45491 │          │                   │               │ libexpat: Integer Overflow or Wraparound                    │
+│            │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2024-45491                  │
+│            ├────────────────┤          │                   │               ├─────────────────────────────────────────────────────────────┤
+│            │ CVE-2024-45492 │          │                   │               │ libexpat: integer overflow                                  │
+│            │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2024-45492                  │
+├────────────┼────────────────┼──────────┼───────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libssl3    │ CVE-2024-6119  │ MEDIUM   │ 3.3.1-r3          │ 3.3.2-r0      │ openssl: Possible denial of service in X.509 name checks    │
+│            │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2024-6119                   │
+└────────────┴────────────────┴──────────┴───────────────────┴───────────────┴─────────────────────────────────────────────────────────────┘
+
+Python (python-pkg)
+===================
+Total: 4 (UNKNOWN: 0, LOW: 1, MEDIUM: 2, HIGH: 1, CRITICAL: 0)
+
+┌──────────────────────────────────────────┬─────────────────────┬──────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────┐
+│                 Library                  │    Vulnerability    │ Severity │ Installed Version │ Fixed Version │                          Title                           │
+├──────────────────────────────────────────┼─────────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────┤
+│ cryptography (METADATA)                  │ GHSA-h4gh-qq45-vh27 │ MEDIUM   │ 42.0.5            │ 43.0.1        │ pyca/cryptography has a vulnerable OpenSSL included in   │
+│                                          │                     │          │                   │               │ cryptography wheels                                      │
+│                                          │                     │          │                   │               │ https://github.com/advisories/GHSA-h4gh-qq45-vh27        │
+├──────────────────────────────────────────┼─────────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────┤
+│ djangorestframework-simplejwt (METADATA) │ CVE-2024-22513      │ LOW      │ 5.3.1             │               │ djangorestframework-simplejwt: information disclosure    │
+│                                          │                     │          │                   │               │ vulnerability                                            │
+│                                          │                     │          │                   │               │ https://avd.aquasec.com/nvd/cve-2024-22513               │
+├──────────────────────────────────────────┼─────────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────┤
+│ pip (METADATA)                           │ CVE-2023-5752       │ MEDIUM   │ 23.0.1            │ 23.3          │ pip: Mercurial configuration injectable in repo revision │
+│                                          │                     │          │                   │               │ when installing via pip                                  │
+│                                          │                     │          │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5752                │
+├──────────────────────────────────────────┼─────────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────┤
+│ setuptools (METADATA)                    │ CVE-2024-6345       │ HIGH     │ 65.5.1            │ 70.0.0        │ pypa/setuptools: Remote code execution via download      │
+│                                          │                     │          │                   │               │ functions in the package_index module in...              │
+│                                          │                     │          │                   │               │ https://avd.aquasec.com/nvd/cve-2024-6345                │
+└──────────────────────────────────────────┴─────────────────────┴──────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────┘
+
+/home/admin/env/lib/python3.10/site-packages/googleapiclient/discovery_cache/documents/appengine.v1.json (secrets)
+==================================================================================================================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
+
+HIGH: AsymmetricPrivateKey (private-key)
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Asymmetric Private Key
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ /home/admin/env/lib/python3.10/site-packages/googleapiclient/discovery_cache/documents/appengine.v1.json:1957 (added in layer '050973001543')
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+1955         "properties": {
+1956           "privateKey": {
+1957 [           "description": "Unencrypted PEM encoded RSA private key. This field is set once on certificate creation and then encrypted. The key size must be 2048 bits or fewer. Must include the header and footer. Example: -----BEGIN RSA PRIVATE KEY-----*-----END RSA PRIVATE KEY----- @InputOnly",
+1958             "type": "string"
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+/home/admin/env/lib/python3.10/site-packages/googleapiclient/discovery_cache/documents/appengine.v1alpha.json (secrets)
+=======================================================================================================================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
+
+HIGH: AsymmetricPrivateKey (private-key)
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Asymmetric Private Key
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ /home/admin/env/lib/python3.10/site-packages/googleapiclient/discovery_cache/documents/appengine.v1alpha.json:964 (added in layer '050973001543')
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 962         "properties": {
+ 963           "privateKey": {
+ 964 [           "description": "Unencrypted PEM encoded RSA private key. This field is set once on certificate creation and then encrypted. The key size must be 2048 bits or fewer. Must include the header and footer. Example: -----BEGIN RSA PRIVATE KEY-----*-----END RSA PRIVATE KEY----- @InputOnly",
+ 965             "type": "string"
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+/home/admin/env/lib/python3.10/site-packages/googleapiclient/discovery_cache/documents/appengine.v1beta.json (secrets)
+======================================================================================================================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
+
+HIGH: AsymmetricPrivateKey (private-key)
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Asymmetric Private Key
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ /home/admin/env/lib/python3.10/site-packages/googleapiclient/discovery_cache/documents/appengine.v1beta.json:2207 (added in layer '050973001543')
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+2205         "properties": {
+2206           "privateKey": {
+2207 [           "description": "Unencrypted PEM encoded RSA private key. This field is set once on certificate creation and then encrypted. The key size must be 2048 bits or fewer. Must include the header and footer. Example: -----BEGIN RSA PRIVATE KEY-----*-----END RSA PRIVATE KEY----- @InputOnly",
+2208             "type": "string"
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+/home/admin/env/lib/python3.10/site-packages/autobahn/wamp/cryptosign.py (secrets)
+==================================================================================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
+
+HIGH: AsymmetricPrivateKey (private-key)
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Asymmetric Private Key
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ /home/admin/env/lib/python3.10/site-packages/autobahn/wamp/cryptosign.py:161 (added in layer '050973001543')
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 159       Example input:
+ 160   
+ 161 [         -----BEGIN OPENSSH PRIVATE KEY-----**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END OPENSSH PRIVATE KEY-----
+ 162   
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
