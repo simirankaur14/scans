@@ -1,0 +1,390 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-anomalyapi:anomalyapi_dev_v1.0.0_3fbdac2",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.19.1"
+    },
+    "ImageID": "sha256:d7cc78ed96acc5ef70b4fcee8774d9a324bd916bc86dc7d4c25d59b42dc1c2f6",
+    "DiffIDs": [
+      "sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15a17bb196d637e526349601820",
+      "sha256:041b6f6a3cb2122697b9fe4e487122d3b3c9cbdb4d0a95673e746c3b719beead",
+      "sha256:ded98abd779bd7c8385ecc3c36b5e0258dbe704c619edff6954909c71317a298",
+      "sha256:ad8ad0c27016e556ac597fdde6efca426dfe4bf65a11a99c952dffcf633322e0",
+      "sha256:3d1942f255ce713d2c4a8967efe5e1694dcda6d32b680ea79d3a3b96b28ecb7a",
+      "sha256:0eec53b744c71681f5ec9d7f2d4c7bca26702b243a70e44ed88c9c287fac2737",
+      "sha256:4d971faf2003275dd041f35fde27a4cb6bdd4e908fa85bfd32435ab877db643e"
+    ],
+    "RepoTags": [
+      "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-anomalyapi:anomalyapi_dev_v1.0.0_3fbdac2"
+    ],
+    "RepoDigests": [
+      "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-anomalyapi@sha256:c4e957f4a18233fd7937f5631d7fae619ec5f220915d070d516147064b0b7ec8"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "617c397cbb0bce6cb1b5bab3045eb27a723d29308917e1385e3e257e729486b6",
+      "created": "2024-09-30T10:04:32.580218121Z",
+      "docker_version": "20.10.24",
+      "history": [
+        {
+          "created": "2024-01-27T00:30:48Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / "
+        },
+        {
+          "created": "2024-01-27T00:30:48Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-05-29T16:08:53Z",
+          "created_by": "ENV ASPNETCORE_URLS=http://+:80 DOTNET_RUNNING_IN_CONTAINER=true DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-05-29T16:08:53Z",
+          "created_by": "RUN /bin/sh -c apk add --upgrade --no-cache         ca-certificates                 krb5-libs         libgcc         libintl         libssl3         libstdc++         zlib # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-05-29T16:09:03Z",
+          "created_by": "ENV DOTNET_VERSION=7.0.20",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-05-29T16:09:03Z",
+          "created_by": "RUN /bin/sh -c wget -O dotnet.tar.gz https://dotnetcli.azureedge.net/dotnet/Runtime/$DOTNET_VERSION/dotnet-runtime-$DOTNET_VERSION-linux-musl-x64.tar.gz     \u0026\u0026 dotnet_sha512='31b9da08d633cd0028eb08c36ee2c5c3cb1be6d3c5e010c85ae291496fe5e818b5be59f5d47aff86ed939c260f762e57ff06934a4d0954376935b1adc799f1bf'     \u0026\u0026 echo \"$dotnet_sha512  dotnet.tar.gz\" | sha512sum -c -     \u0026\u0026 mkdir -p /usr/share/dotnet     \u0026\u0026 tar -oxzf dotnet.tar.gz -C /usr/share/dotnet     \u0026\u0026 rm dotnet.tar.gz     \u0026\u0026 ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-05-29T16:09:13Z",
+          "created_by": "ENV ASPNET_VERSION=7.0.20",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-05-29T16:09:13Z",
+          "created_by": "RUN /bin/sh -c wget -O aspnetcore.tar.gz https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/$ASPNET_VERSION/aspnetcore-runtime-$ASPNET_VERSION-linux-musl-x64.tar.gz     \u0026\u0026 aspnetcore_sha512='a80f31193af70d556e8d026d39d79863c8389b065fe0778e7b4360f7d1f6d36503ba52736c40e74a716c3c30500b185816ed60d79b06ae295754b67374a1fa45'     \u0026\u0026 echo \"$aspnetcore_sha512  aspnetcore.tar.gz\" | sha512sum -c -     \u0026\u0026 tar -oxzf aspnetcore.tar.gz -C /usr/share/dotnet ./shared/Microsoft.AspNetCore.App     \u0026\u0026 rm aspnetcore.tar.gz # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-09-30T10:03:24Z",
+          "created_by": "/bin/sh -c #(nop) WORKDIR /app"
+        },
+        {
+          "created": "2024-09-30T10:04:27Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:4f2581b87c685442e0400e1030a374b7e24f4ef4d09cafa75a47647a5a54d6b2 in . "
+        },
+        {
+          "created": "2024-09-30T10:04:32Z",
+          "created_by": "/bin/sh -c apk update \u0026\u0026     apk add busybox=1.36.1-r32 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/main  \u0026\u0026     apk update \u0026\u0026     apk upgrade busybox \u0026\u0026     addgroup -g 1000 admingrp \u0026\u0026     adduser -D -G admingrp admin \u0026\u0026     chown -R admin:admingrp /app \u0026\u0026     chmod g+w /app"
+        },
+        {
+          "created": "2024-09-30T10:04:32Z",
+          "created_by": "/bin/sh -c #(nop)  USER admin",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-09-30T10:04:32Z",
+          "created_by": "/bin/sh -c #(nop)  ENV ASPNETCORE_ENVIRONMENT=",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-09-30T10:04:32Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"dotnet\" \"AIMLToolkit.Api.dll\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15a17bb196d637e526349601820",
+          "sha256:041b6f6a3cb2122697b9fe4e487122d3b3c9cbdb4d0a95673e746c3b719beead",
+          "sha256:ded98abd779bd7c8385ecc3c36b5e0258dbe704c619edff6954909c71317a298",
+          "sha256:ad8ad0c27016e556ac597fdde6efca426dfe4bf65a11a99c952dffcf633322e0",
+          "sha256:3d1942f255ce713d2c4a8967efe5e1694dcda6d32b680ea79d3a3b96b28ecb7a",
+          "sha256:0eec53b744c71681f5ec9d7f2d4c7bca26702b243a70e44ed88c9c287fac2737",
+          "sha256:4d971faf2003275dd041f35fde27a4cb6bdd4e908fa85bfd32435ab877db643e"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "dotnet",
+          "AIMLToolkit.Api.dll"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "ASPNETCORE_URLS=http://+:80",
+          "DOTNET_RUNNING_IN_CONTAINER=true",
+          "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true",
+          "DOTNET_VERSION=7.0.20",
+          "ASPNET_VERSION=7.0.20",
+          "ASPNETCORE_ENVIRONMENT="
+        ],
+        "Image": "sha256:42df038d72e5e573efedee04176a65216f8dea5dda4f59b2e4f8b4060d70b8a2",
+        "User": "admin",
+        "WorkingDir": "/app"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-anomalyapi:anomalyapi_dev_v1.0.0_3fbdac2 (alpine 3.19.1)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-4741",
+          "PkgName": "libcrypto3",
+          "InstalledVersion": "3.1.5-r0",
+          "FixedVersion": "3.1.6-r0",
+          "Layer": {
+            "DiffID": "sha256:041b6f6a3cb2122697b9fe4e487122d3b3c9cbdb4d0a95673e746c3b719beead"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-4741",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Use After Free with SSL_free_buffers",
+          "Description": "A use-after-free vulnerability was found in OpenSSL. Calling the OpenSSL API SSL_free_buffers function may cause memory to be accessed that was previously freed in some situations.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-4741",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-4741",
+            "https://ubuntu.com/security/notices/USN-6937-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-4741",
+            "https://www.openssl.org/news/secadv/20240528.txt"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2024-5535",
+          "PkgName": "libcrypto3",
+          "InstalledVersion": "3.1.5-r0",
+          "FixedVersion": "3.1.6-r0",
+          "Layer": {
+            "DiffID": "sha256:041b6f6a3cb2122697b9fe4e487122d3b3c9cbdb4d0a95673e746c3b719beead"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-5535",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: SSL_select_next_proto buffer overread",
+          "Description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/06/27/1",
+            "http://www.openwall.com/lists/oss-security/2024/06/28/4",
+            "https://access.redhat.com/security/cve/CVE-2024-5535",
+            "https://github.com/openssl/openssl/commit/4ada436a1946cbb24db5ab4ca082b69c1bc10f37",
+            "https://github.com/openssl/openssl/commit/99fb785a5f85315b95288921a321a935ea29a51e",
+            "https://github.com/openssl/openssl/commit/cf6f91f6121f4db167405db2f0de410a456f260c",
+            "https://github.com/openssl/openssl/commit/e86ac436f0bd54d4517745483e2315650fae7b2c",
+            "https://github.openssl.org/openssl/extended-releases/commit/9947251413065a05189a63c9b7a6c1d4e224c21c",
+            "https://github.openssl.org/openssl/extended-releases/commit/b78ec0824da857223486660177d3b1f255c65d87",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-5535",
+            "https://openssl.org/news/secadv/20240627.txt",
+            "https://security.netapp.com/advisory/ntap-20240712-0005/",
+            "https://ubuntu.com/security/notices/USN-6937-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-5535",
+            "https://www.openssl.org/news/secadv/20240627.txt"
+          ],
+          "PublishedDate": "2024-06-27T11:15:24.447Z",
+          "LastModifiedDate": "2024-07-12T14:15:16.79Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-6119",
+          "PkgName": "libcrypto3",
+          "InstalledVersion": "3.1.5-r0",
+          "FixedVersion": "3.1.7-r0",
+          "Layer": {
+            "DiffID": "sha256:041b6f6a3cb2122697b9fe4e487122d3b3c9cbdb4d0a95673e746c3b719beead"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-6119",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Possible denial of service in X.509 name checks",
+          "Description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-843"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6783",
+            "https://access.redhat.com/security/cve/CVE-2024-6119",
+            "https://bugzilla.redhat.com/2306158",
+            "https://errata.almalinux.org/9/ALSA-2024-6783.html",
+            "https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f",
+            "https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6",
+            "https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2",
+            "https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0",
+            "https://github.com/openssl/openssl/security/advisories/GHSA-5qrj-vq78-58fj",
+            "https://linux.oracle.com/cve/CVE-2024-6119.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6783.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-6119",
+            "https://openssl-library.org/news/secadv/20240903.txt",
+            "https://ubuntu.com/security/notices/USN-6986-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-6119"
+          ],
+          "PublishedDate": "2024-09-03T16:15:07.177Z",
+          "LastModifiedDate": "2024-09-03T21:35:12.987Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-4741",
+          "PkgName": "libssl3",
+          "InstalledVersion": "3.1.5-r0",
+          "FixedVersion": "3.1.6-r0",
+          "Layer": {
+            "DiffID": "sha256:041b6f6a3cb2122697b9fe4e487122d3b3c9cbdb4d0a95673e746c3b719beead"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-4741",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Use After Free with SSL_free_buffers",
+          "Description": "A use-after-free vulnerability was found in OpenSSL. Calling the OpenSSL API SSL_free_buffers function may cause memory to be accessed that was previously freed in some situations.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-4741",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-4741",
+            "https://ubuntu.com/security/notices/USN-6937-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-4741",
+            "https://www.openssl.org/news/secadv/20240528.txt"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2024-5535",
+          "PkgName": "libssl3",
+          "InstalledVersion": "3.1.5-r0",
+          "FixedVersion": "3.1.6-r0",
+          "Layer": {
+            "DiffID": "sha256:041b6f6a3cb2122697b9fe4e487122d3b3c9cbdb4d0a95673e746c3b719beead"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-5535",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: SSL_select_next_proto buffer overread",
+          "Description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/06/27/1",
+            "http://www.openwall.com/lists/oss-security/2024/06/28/4",
+            "https://access.redhat.com/security/cve/CVE-2024-5535",
+            "https://github.com/openssl/openssl/commit/4ada436a1946cbb24db5ab4ca082b69c1bc10f37",
+            "https://github.com/openssl/openssl/commit/99fb785a5f85315b95288921a321a935ea29a51e",
+            "https://github.com/openssl/openssl/commit/cf6f91f6121f4db167405db2f0de410a456f260c",
+            "https://github.com/openssl/openssl/commit/e86ac436f0bd54d4517745483e2315650fae7b2c",
+            "https://github.openssl.org/openssl/extended-releases/commit/9947251413065a05189a63c9b7a6c1d4e224c21c",
+            "https://github.openssl.org/openssl/extended-releases/commit/b78ec0824da857223486660177d3b1f255c65d87",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-5535",
+            "https://openssl.org/news/secadv/20240627.txt",
+            "https://security.netapp.com/advisory/ntap-20240712-0005/",
+            "https://ubuntu.com/security/notices/USN-6937-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-5535",
+            "https://www.openssl.org/news/secadv/20240627.txt"
+          ],
+          "PublishedDate": "2024-06-27T11:15:24.447Z",
+          "LastModifiedDate": "2024-07-12T14:15:16.79Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-6119",
+          "PkgName": "libssl3",
+          "InstalledVersion": "3.1.5-r0",
+          "FixedVersion": "3.1.7-r0",
+          "Layer": {
+            "DiffID": "sha256:041b6f6a3cb2122697b9fe4e487122d3b3c9cbdb4d0a95673e746c3b719beead"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-6119",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Possible denial of service in X.509 name checks",
+          "Description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-843"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6783",
+            "https://access.redhat.com/security/cve/CVE-2024-6119",
+            "https://bugzilla.redhat.com/2306158",
+            "https://errata.almalinux.org/9/ALSA-2024-6783.html",
+            "https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f",
+            "https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6",
+            "https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2",
+            "https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0",
+            "https://github.com/openssl/openssl/security/advisories/GHSA-5qrj-vq78-58fj",
+            "https://linux.oracle.com/cve/CVE-2024-6119.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6783.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-6119",
+            "https://openssl-library.org/news/secadv/20240903.txt",
+            "https://ubuntu.com/security/notices/USN-6986-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-6119"
+          ],
+          "PublishedDate": "2024-09-03T16:15:07.177Z",
+          "LastModifiedDate": "2024-09-03T21:35:12.987Z"
+        }
+      ]
+    }
+  ]
+}

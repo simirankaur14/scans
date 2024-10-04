@@ -1,0 +1,541 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-ui:ui_dev_v1.0.0_1be6c81",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.19.3"
+    },
+    "ImageID": "sha256:ed8fce619dfcdea5820b392d89e6926a850d832a7b5e12d644ee00deb0393053",
+    "DiffIDs": [
+      "sha256:b895814e9e6408217eb0bf6d743ed1a1e2b7273a6b3ff66405b7a9c977a0c8e4",
+      "sha256:9dca7439e1b30acab0ba61d2f42530c5835380f59d9bae541e7c034a413d2131",
+      "sha256:eadc278e8f9e4ef784a85388ac43799a0657779dfe5d9feeffc5f54fde25de8e",
+      "sha256:fb5df5db7bbda03510936890f8bf2992709998361c70296c7177d25fa3a25a02",
+      "sha256:3be2be874bba2e1c509ffbec5e7eaae5b65fc8ad8a7ed8f3f9456db389b30a49",
+      "sha256:a0bde08c3815e5abdc5fb4007ed00c6a60eb9e0de19ce6f6b86e40edd722aa17",
+      "sha256:2ee64cbdc81d9cc2ea65dd9511f2cd8343c85e567649bb4d40d0b198d2d2006c",
+      "sha256:28d40eb137936e3c101810b152b9a0c6b2ace2da4e09085a6b6cb25d015cf86e",
+      "sha256:7daf0f3ad73a6c13f8c8e8bd101565e81a15424d26c29ac91604641cbf9f3bc1",
+      "sha256:034bccf935159c5f77c4e2ea614be5c9977dc6a339a951bf351a832e36df3145",
+      "sha256:c2b576893763a3d761a44f18d397bffd8ad5903108e9389db57a3103ac97963c",
+      "sha256:f46ac290d94309c7187e31449da09e822d49d862e9e61f2d49ec1c8ba915a3f6",
+      "sha256:a5e22effbf3691383ee0bd5c611d71a99b466b93efe3cff4da6e238635fdcce9",
+      "sha256:936c81affe1e3bf21e0c54fb5e8663b90923c14cbfe255318b25408e83106b71",
+      "sha256:43eea2eb66438344844220377b3e02c130f07e2693e7d9ed04d16ab7ddc89a5a",
+      "sha256:82d7685d6da80111aab66e38307f0a833919237c05bda0259d6cfa7175ad9dd0",
+      "sha256:daeadfb199b611b532a9fd32f0ce49e1807f5f76ab1d01d9b366f1e06734168d",
+      "sha256:c01c5e647eebcf6fa868663742793f3ed3f40b85744c1c525636cf204133d851"
+    ],
+    "RepoTags": [
+      "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-ui:ui_dev_v1.0.0_1be6c81"
+    ],
+    "RepoDigests": [
+      "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-ui@sha256:ae2a4002aafd3b464927e75bbef7f7d708fdace918bc394c109810c6de2e2b6b"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "4ddde3d9c8993b07b0f065132a86d2412a2a9ae6b4fca24af529a804457547b6",
+      "created": "2024-08-21T11:32:10.781569987Z",
+      "docker_version": "20.10.24",
+      "history": [
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:c644b15c170e2ca46176a566910d40a21dce66518ed8fdfd34ebcf0e9dc90c55 in / "
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "LABEL maintainer=NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "ENV NGINX_VERSION=1.27.0",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "ENV PKG_RELEASE=2",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "RUN /bin/sh -c set -x     \u0026\u0026 addgroup -g 101 -S nginx     \u0026\u0026 adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     \u0026\u0026 apkArch=\"$(cat /etc/apk/arch)\"     \u0026\u0026 nginxPackages=\"         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     \"     \u0026\u0026 apk add --no-cache --virtual .checksum-deps         openssl     \u0026\u0026 case \"$apkArch\" in         x86_64|aarch64)             set -x             \u0026\u0026 KEY_SHA512=\"e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655\"             \u0026\u0026 wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             \u0026\u0026 if echo \"$KEY_SHA512 */tmp/nginx_signing.rsa.pub\" | sha512sum -c -; then                 echo \"key verification succeeded!\";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo \"key verification failed!\";                 exit 1;             fi             \u0026\u0026 apk add -X \"https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\" --no-cache $nginxPackages             ;;         *)             set -x             \u0026\u0026 tempDir=\"$(mktemp -d)\"             \u0026\u0026 chown nobody:nobody $tempDir             \u0026\u0026 apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils             \u0026\u0026 su nobody -s /bin/sh -c \"                 export HOME=${tempDir}                 \u0026\u0026 cd ${tempDir}                 \u0026\u0026 curl -f -O https://hg.nginx.org/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 \u0026\u0026 PKGOSSCHECKSUM=\\\"cd3333f4dfa4a873f6df73dfe24e047adc092d779aefb46577b6307ff0d0125543508694a80158b2bfc891167ad763b0d08287829df9924d4c22f50d063e76c0 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\\\"                 \u0026\u0026 if [ \\\"\\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\\\" = \\\"\\$PKGOSSCHECKSUM\\\" ]; then                     echo \\\"pkg-oss tarball checksum verification succeeded!\\\";                 else                     echo \\\"pkg-oss tarball checksum verification failed!\\\";                     exit 1;                 fi                 \u0026\u0026 tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 \u0026\u0026 cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 \u0026\u0026 cd alpine                 \u0026\u0026 make base                 \u0026\u0026 apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 \u0026\u0026 abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 \"             \u0026\u0026 cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             \u0026\u0026 apk del --no-network .build-deps             \u0026\u0026 apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     \u0026\u0026 apk del --no-network .checksum-deps     \u0026\u0026 if [ -n \"$tempDir\" ]; then rm -rf \"$tempDir\"; fi     \u0026\u0026 if [ -f \"/etc/apk/keys/abuild-key.rsa.pub\" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     \u0026\u0026 apk add --no-cache --virtual .gettext gettext     \u0026\u0026 mv /usr/bin/envsubst /tmp/         \u0026\u0026 runDeps=\"$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, \"\\nso:\", $2); print \"so:\" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )\"     \u0026\u0026 apk add --no-cache $runDeps     \u0026\u0026 apk del --no-network .gettext     \u0026\u0026 mv /tmp/envsubst /usr/local/bin/     \u0026\u0026 apk add --no-cache tzdata     \u0026\u0026 ln -sf /dev/stdout /var/log/nginx/access.log     \u0026\u0026 ln -sf /dev/stderr /var/log/nginx/error.log     \u0026\u0026 mkdir /docker-entrypoint.d # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "COPY docker-entrypoint.sh / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "EXPOSE map[80/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "STOPSIGNAL SIGQUIT",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "CMD [\"nginx\" \"-g\" \"daemon off;\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "ENV NJS_VERSION=0.8.4",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "ENV NJS_RELEASE=2",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-06-21T00:41:06Z",
+          "created_by": "RUN /bin/sh -c set -x     \u0026\u0026 apkArch=\"$(cat /etc/apk/arch)\"     \u0026\u0026 nginxPackages=\"         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     \"     \u0026\u0026 apk add --no-cache --virtual .checksum-deps         openssl     \u0026\u0026 case \"$apkArch\" in         x86_64|aarch64)             apk add -X \"https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\" --no-cache $nginxPackages             ;;         *)             set -x             \u0026\u0026 tempDir=\"$(mktemp -d)\"             \u0026\u0026 chown nobody:nobody $tempDir             \u0026\u0026 apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils             \u0026\u0026 su nobody -s /bin/sh -c \"                 export HOME=${tempDir}                 \u0026\u0026 cd ${tempDir}                 \u0026\u0026 curl -f -O https://hg.nginx.org/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 \u0026\u0026 PKGOSSCHECKSUM=\\\"cd3333f4dfa4a873f6df73dfe24e047adc092d779aefb46577b6307ff0d0125543508694a80158b2bfc891167ad763b0d08287829df9924d4c22f50d063e76c0 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\\\"                 \u0026\u0026 if [ \\\"\\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\\\" = \\\"\\$PKGOSSCHECKSUM\\\" ]; then                     echo \\\"pkg-oss tarball checksum verification succeeded!\\\";                 else                     echo \\\"pkg-oss tarball checksum verification failed!\\\";                     exit 1;                 fi                 \u0026\u0026 tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 \u0026\u0026 cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 \u0026\u0026 cd alpine                 \u0026\u0026 make module-geoip module-image-filter module-njs module-xslt                 \u0026\u0026 apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 \u0026\u0026 abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 \"             \u0026\u0026 cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             \u0026\u0026 apk del --no-network .build-deps             \u0026\u0026 apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     \u0026\u0026 apk del --no-network .checksum-deps     \u0026\u0026 if [ -n \"$tempDir\" ]; then rm -rf \"$tempDir\"; fi     \u0026\u0026 if [ -f \"/etc/apk/keys/abuild-key.rsa.pub\" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     \u0026\u0026 apk add --no-cache curl ca-certificates # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-08-21T11:32:03Z",
+          "created_by": "/bin/sh -c apk update \u0026\u0026 apk upgrade --no-cache"
+        },
+        {
+          "created": "2024-08-21T11:32:05Z",
+          "created_by": "/bin/sh -c apk add libx11=1.8.7-r0"
+        },
+        {
+          "created": "2024-08-21T11:32:06Z",
+          "created_by": "/bin/sh -c apk add curl"
+        },
+        {
+          "created": "2024-08-21T11:32:06Z",
+          "created_by": "/bin/sh -c addgroup -g 1000 admingrp"
+        },
+        {
+          "created": "2024-08-21T11:32:07Z",
+          "created_by": "/bin/sh -c adduser -D -G admingrp admin"
+        },
+        {
+          "created": "2024-08-21T11:32:08Z",
+          "created_by": "/bin/sh -c chown -R admin:admingrp /usr/share/nginx/html"
+        },
+        {
+          "created": "2024-08-21T11:32:08Z",
+          "created_by": "/bin/sh -c chown -R admin:admingrp /var/cache/nginx/"
+        },
+        {
+          "created": "2024-08-21T11:32:09Z",
+          "created_by": "/bin/sh -c chown -R admin:admingrp /var/run/"
+        },
+        {
+          "created": "2024-08-21T11:32:09Z",
+          "created_by": "/bin/sh -c #(nop)  ARG user=admin",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-08-21T11:32:09Z",
+          "created_by": "/bin/sh -c #(nop)  USER admin",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-08-21T11:32:10Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:8f16da2d2eae0d491d2e40dab8796e3b0074fd1e87dd5b70a3ff21bbc9d42088 in /usr/share/nginx/html "
+        },
+        {
+          "created": "2024-08-21T11:32:10Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:ac552b71e440cddfa70e89297b0c8bf28d582e6002132f9a4100481665bd2c07 in /etc/nginx/conf.d/ "
+        },
+        {
+          "created": "2024-08-21T11:32:10Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 8080",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-08-21T11:32:10Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"nginx\" \"-g\" \"daemon off;\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-08-21T11:32:10Z",
+          "created_by": "/bin/sh -c #(nop)  USER admin",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:b895814e9e6408217eb0bf6d743ed1a1e2b7273a6b3ff66405b7a9c977a0c8e4",
+          "sha256:9dca7439e1b30acab0ba61d2f42530c5835380f59d9bae541e7c034a413d2131",
+          "sha256:eadc278e8f9e4ef784a85388ac43799a0657779dfe5d9feeffc5f54fde25de8e",
+          "sha256:fb5df5db7bbda03510936890f8bf2992709998361c70296c7177d25fa3a25a02",
+          "sha256:3be2be874bba2e1c509ffbec5e7eaae5b65fc8ad8a7ed8f3f9456db389b30a49",
+          "sha256:a0bde08c3815e5abdc5fb4007ed00c6a60eb9e0de19ce6f6b86e40edd722aa17",
+          "sha256:2ee64cbdc81d9cc2ea65dd9511f2cd8343c85e567649bb4d40d0b198d2d2006c",
+          "sha256:28d40eb137936e3c101810b152b9a0c6b2ace2da4e09085a6b6cb25d015cf86e",
+          "sha256:7daf0f3ad73a6c13f8c8e8bd101565e81a15424d26c29ac91604641cbf9f3bc1",
+          "sha256:034bccf935159c5f77c4e2ea614be5c9977dc6a339a951bf351a832e36df3145",
+          "sha256:c2b576893763a3d761a44f18d397bffd8ad5903108e9389db57a3103ac97963c",
+          "sha256:f46ac290d94309c7187e31449da09e822d49d862e9e61f2d49ec1c8ba915a3f6",
+          "sha256:a5e22effbf3691383ee0bd5c611d71a99b466b93efe3cff4da6e238635fdcce9",
+          "sha256:936c81affe1e3bf21e0c54fb5e8663b90923c14cbfe255318b25408e83106b71",
+          "sha256:43eea2eb66438344844220377b3e02c130f07e2693e7d9ed04d16ab7ddc89a5a",
+          "sha256:82d7685d6da80111aab66e38307f0a833919237c05bda0259d6cfa7175ad9dd0",
+          "sha256:daeadfb199b611b532a9fd32f0ce49e1807f5f76ab1d01d9b366f1e06734168d",
+          "sha256:c01c5e647eebcf6fa868663742793f3ed3f40b85744c1c525636cf204133d851"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "nginx",
+          "-g",
+          "daemon off;"
+        ],
+        "Entrypoint": [
+          "/docker-entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "NGINX_VERSION=1.27.0",
+          "PKG_RELEASE=2",
+          "NJS_VERSION=0.8.4",
+          "NJS_RELEASE=2"
+        ],
+        "Image": "sha256:ba5f63cb6410913ee11f0e4376a4b99ff426086bd1747aacc8ba840591d24d4c",
+        "Labels": {
+          "maintainer": "NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e"
+        },
+        "User": "admin",
+        "StopSignal": "SIGQUIT"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-ui:ui_dev_v1.0.0_1be6c81 (alpine 3.19.3)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-6119",
+          "PkgName": "libcrypto3",
+          "InstalledVersion": "3.1.6-r2",
+          "FixedVersion": "3.1.7-r0",
+          "Layer": {
+            "DiffID": "sha256:b895814e9e6408217eb0bf6d743ed1a1e2b7273a6b3ff66405b7a9c977a0c8e4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-6119",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Possible denial of service in X.509 name checks",
+          "Description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-843"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6783",
+            "https://access.redhat.com/security/cve/CVE-2024-6119",
+            "https://bugzilla.redhat.com/2306158",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2306158",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6119",
+            "https://errata.almalinux.org/9/ALSA-2024-6783.html",
+            "https://errata.rockylinux.org/RLSA-2024:6783",
+            "https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f",
+            "https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6",
+            "https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2",
+            "https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0",
+            "https://github.com/openssl/openssl/security/advisories/GHSA-5qrj-vq78-58fj",
+            "https://linux.oracle.com/cve/CVE-2024-6119.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6783.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-6119",
+            "https://openssl-library.org/news/secadv/20240903.txt",
+            "https://ubuntu.com/security/notices/USN-6986-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-6119"
+          ],
+          "PublishedDate": "2024-09-03T16:15:07.177Z",
+          "LastModifiedDate": "2024-09-03T21:35:12.987Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-45490",
+          "PkgName": "libexpat",
+          "InstalledVersion": "2.6.2-r0",
+          "FixedVersion": "2.6.3-r0",
+          "Layer": {
+            "DiffID": "sha256:28d40eb137936e3c101810b152b9a0c6b2ace2da4e09085a6b6cb25d015cf86e"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-45490",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "libexpat: Negative Length Parsing Vulnerability in libexpat",
+          "Description": "An issue was discovered in libexpat before 2.6.3. xmlparse.c does not reject a negative length for XML_ParseBuffer.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-611"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+              "V3Score": 5.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6989",
+            "https://access.redhat.com/security/cve/CVE-2024-45490",
+            "https://bugzilla.redhat.com/2308615",
+            "https://bugzilla.redhat.com/2308616",
+            "https://bugzilla.redhat.com/2308617",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308615",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308616",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308617",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45490",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45491",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45492",
+            "https://errata.almalinux.org/8/ALSA-2024-6989.html",
+            "https://errata.rockylinux.org/RLSA-2024:6754",
+            "https://github.com/libexpat/libexpat/blob/R_2_6_3/expat/Changes",
+            "https://github.com/libexpat/libexpat/issues/887",
+            "https://github.com/libexpat/libexpat/pull/890",
+            "https://linux.oracle.com/cve/CVE-2024-45490.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6989.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-45490",
+            "https://ubuntu.com/security/notices/USN-7000-1",
+            "https://ubuntu.com/security/notices/USN-7000-2",
+            "https://ubuntu.com/security/notices/USN-7001-1",
+            "https://ubuntu.com/security/notices/USN-7001-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-45490"
+          ],
+          "PublishedDate": "2024-08-30T03:15:03.757Z",
+          "LastModifiedDate": "2024-09-04T14:28:19.313Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-45491",
+          "PkgName": "libexpat",
+          "InstalledVersion": "2.6.2-r0",
+          "FixedVersion": "2.6.3-r0",
+          "Layer": {
+            "DiffID": "sha256:28d40eb137936e3c101810b152b9a0c6b2ace2da4e09085a6b6cb25d015cf86e"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-45491",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "libexpat: Integer Overflow or Wraparound",
+          "Description": "An issue was discovered in libexpat before 2.6.3. dtdCopy in xmlparse.c can have an integer overflow for nDefaultAtts on 32-bit platforms (where UINT_MAX equals SIZE_MAX).",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6989",
+            "https://access.redhat.com/security/cve/CVE-2024-45491",
+            "https://bugzilla.redhat.com/2308615",
+            "https://bugzilla.redhat.com/2308616",
+            "https://bugzilla.redhat.com/2308617",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308615",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308616",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308617",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45490",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45491",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45492",
+            "https://errata.almalinux.org/8/ALSA-2024-6989.html",
+            "https://errata.rockylinux.org/RLSA-2024:6754",
+            "https://github.com/libexpat/libexpat/blob/R_2_6_3/expat/Changes",
+            "https://github.com/libexpat/libexpat/issues/888",
+            "https://github.com/libexpat/libexpat/pull/891",
+            "https://linux.oracle.com/cve/CVE-2024-45491.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6989.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-45491",
+            "https://ubuntu.com/security/notices/USN-7000-1",
+            "https://ubuntu.com/security/notices/USN-7000-2",
+            "https://ubuntu.com/security/notices/USN-7001-1",
+            "https://ubuntu.com/security/notices/USN-7001-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-45491"
+          ],
+          "PublishedDate": "2024-08-30T03:15:03.85Z",
+          "LastModifiedDate": "2024-09-04T14:28:33.953Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-45492",
+          "PkgName": "libexpat",
+          "InstalledVersion": "2.6.2-r0",
+          "FixedVersion": "2.6.3-r0",
+          "Layer": {
+            "DiffID": "sha256:28d40eb137936e3c101810b152b9a0c6b2ace2da4e09085a6b6cb25d015cf86e"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-45492",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "libexpat: integer overflow",
+          "Description": "An issue was discovered in libexpat before 2.6.3. nextScaffoldPart in xmlparse.c can have an integer overflow for m_groupSize on 32-bit platforms (where UINT_MAX equals SIZE_MAX).",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6989",
+            "https://access.redhat.com/security/cve/CVE-2024-45492",
+            "https://bugzilla.redhat.com/2308615",
+            "https://bugzilla.redhat.com/2308616",
+            "https://bugzilla.redhat.com/2308617",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308615",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308616",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308617",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45490",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45491",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45492",
+            "https://errata.almalinux.org/8/ALSA-2024-6989.html",
+            "https://errata.rockylinux.org/RLSA-2024:6754",
+            "https://github.com/libexpat/libexpat/blob/R_2_6_3/expat/Changes",
+            "https://github.com/libexpat/libexpat/issues/889",
+            "https://github.com/libexpat/libexpat/pull/892",
+            "https://linux.oracle.com/cve/CVE-2024-45492.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6989.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-45492",
+            "https://ubuntu.com/security/notices/USN-7000-1",
+            "https://ubuntu.com/security/notices/USN-7000-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-45492"
+          ],
+          "PublishedDate": "2024-08-30T03:15:03.93Z",
+          "LastModifiedDate": "2024-09-04T14:28:41.76Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-6119",
+          "PkgName": "libssl3",
+          "InstalledVersion": "3.1.6-r2",
+          "FixedVersion": "3.1.7-r0",
+          "Layer": {
+            "DiffID": "sha256:b895814e9e6408217eb0bf6d743ed1a1e2b7273a6b3ff66405b7a9c977a0c8e4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-6119",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Possible denial of service in X.509 name checks",
+          "Description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-843"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6783",
+            "https://access.redhat.com/security/cve/CVE-2024-6119",
+            "https://bugzilla.redhat.com/2306158",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2306158",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6119",
+            "https://errata.almalinux.org/9/ALSA-2024-6783.html",
+            "https://errata.rockylinux.org/RLSA-2024:6783",
+            "https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f",
+            "https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6",
+            "https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2",
+            "https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0",
+            "https://github.com/openssl/openssl/security/advisories/GHSA-5qrj-vq78-58fj",
+            "https://linux.oracle.com/cve/CVE-2024-6119.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6783.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-6119",
+            "https://openssl-library.org/news/secadv/20240903.txt",
+            "https://ubuntu.com/security/notices/USN-6986-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-6119"
+          ],
+          "PublishedDate": "2024-09-03T16:15:07.177Z",
+          "LastModifiedDate": "2024-09-03T21:35:12.987Z"
+        }
+      ]
+    }
+  ]
+}

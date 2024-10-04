@@ -1,0 +1,846 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-scheduler:scheduler_dev_v1.0.0_fd6cdb6",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.20.2"
+    },
+    "ImageID": "sha256:3befdd949e4ded97262b149af2afd2061a970287705cd01ac14ffac29d05373b",
+    "DiffIDs": [
+      "sha256:78561cef0761903dd2f7d09856150a6d4fb48967a8f113f3e33d79effbf59a07",
+      "sha256:8a64f2dc1bc876b716afb3f88533fb249a6da9250e389277d83a301dc7e8ee6c",
+      "sha256:beaea7f540665e43687f4a035ae6b22c1462bb849f3bf3fc623fdf2aa8b45f46",
+      "sha256:192fe665d346cccde98d566136b1a4b3a75dd4df5eefc7a03842d7c683d4b0e0",
+      "sha256:e72fb7ff8294e26f802f61d891212dd8c7d6f9ef4fac7264aa7c382e61ecd168",
+      "sha256:ceeae985f8018e77804f3a6bbe8757958671f6b9481b7ee16511b5aa40627c15",
+      "sha256:05b19d827daadfd4388790a305cf9578ee12d7a5c4b0caa8c20ed315c34f5ba9",
+      "sha256:ba748be09e4037c77446fb60f8e62c1f5981f2644f38affa47881fcba6aba569",
+      "sha256:996847d7b02f821df0cc2f94a02cfefd4ace13fc41ce17049ce0e7899b31a7a5",
+      "sha256:70592b47912fe416e58c06c656608c2973ce16e1d2bc7d7098d49c8f168676e5",
+      "sha256:e873974840b3199579ed3bce49e9d1bf3747bc22b2ebe669e6e439403bf5adf3",
+      "sha256:5d439e848b5941cb3d20d1efc81a17984acbd04a0f89d2b69a1a74261e28290e",
+      "sha256:acc9d5ac7a5e2e47f6153afe7a896f5ddd64735c72ab815bd01cb04eb46188f3",
+      "sha256:584cc3fa3571c23d162ccfa062fad0d85024a75325292ffbf5e874ee1f8c3ffd",
+      "sha256:0ab3cfde250775fade219fd3d608ff0ee119554389581b58ae0b368e45a8a118",
+      "sha256:d25732cc9aab364cd99aa69e1bb155eab8bba97552f16bd9f63dd11232364f36",
+      "sha256:ad3a70faded3712b0ab424f404e1f13802b03c704a0938eaed6faeac97bb04c3",
+      "sha256:4d40b2de06d10986c01195ee10465bb4ec6b87550be0d0a759f30a7570e9fedb",
+      "sha256:25cd155cf85d5602bec608ca26a9cbc84694c9b63b29e22be36cc285a1f3e994"
+    ],
+    "RepoTags": [
+      "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-scheduler:scheduler_dev_v1.0.0_fd6cdb6"
+    ],
+    "RepoDigests": [
+      "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-scheduler@sha256:411bb9b58129fa36464317789eac78ccf083d1f862afdd1dbe0482fe83b78eb1"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "b8ca0ae7bf80694743ef74e392244c82de5d5cc43cf452912e6fc5825e836c80",
+      "created": "2024-08-21T15:06:09.850104433Z",
+      "docker_version": "20.10.24",
+      "history": [
+        {
+          "created": "2024-07-22T22:26:43Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:99093095d62d0421541d882f9ceeddb2981fe701ec0aa9d2c08480712d5fed21 in / "
+        },
+        {
+          "created": "2024-07-22T22:26:43Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "ENV LANG=C.UTF-8",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "RUN /bin/sh -c set -eux; \tapk add --no-cache \t\tca-certificates \t\ttzdata \t; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "ENV GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "ENV PYTHON_VERSION=3.10.14",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "RUN /bin/sh -c set -eux; \t\tapk add --no-cache --virtual .build-deps \t\tgnupg \t\ttar \t\txz \t\t\t\tbluez-dev \t\tbzip2-dev \t\tdpkg-dev dpkg \t\texpat-dev \t\tfindutils \t\tgcc \t\tgdbm-dev \t\tlibc-dev \t\tlibffi-dev \t\tlibnsl-dev \t\tlibtirpc-dev \t\tlinux-headers \t\tmake \t\tncurses-dev \t\topenssl-dev \t\tpax-utils \t\treadline-dev \t\tsqlite-dev \t\ttcl-dev \t\ttk \t\ttk-dev \t\tutil-linux-dev \t\txz-dev \t\tzlib-dev \t; \t\twget -O python.tar.xz \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\"; \twget -O python.tar.xz.asc \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\"; \tGNUPGHOME=\"$(mktemp -d)\"; export GNUPGHOME; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$GPG_KEY\"; \tgpg --batch --verify python.tar.xz.asc python.tar.xz; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\" python.tar.xz.asc; \tmkdir -p /usr/src/python; \ttar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; \trm python.tar.xz; \t\tcd /usr/src/python; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \t./configure \t\t--build=\"$gnuArch\" \t\t--enable-loadable-sqlite-extensions \t\t$(test \"$gnuArch\" != 'riscv64-linux-musl' \u0026\u0026 echo '--enable-optimizations') \t\t--enable-option-checking=fatal \t\t--enable-shared \t\t--with-lto \t\t--with-system-expat \t\t--without-ensurepip \t; \tnproc=\"$(nproc)\"; \tEXTRA_CFLAGS=\"-DTHREAD_STACK_SIZE=0x100000\"; \tLDFLAGS=\"${LDFLAGS:--Wl},--strip-all\"; \tmake -j \"$nproc\" \t\t\"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}\" \t\t\"LDFLAGS=${LDFLAGS:-}\" \t\t\"PROFILE_TASK=${PROFILE_TASK:-}\" \t; \trm python; \tmake -j \"$nproc\" \t\t\"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}\" \t\t\"LDFLAGS=${LDFLAGS:--Wl},-rpath='\\$\\$ORIGIN/../lib'\" \t\t\"PROFILE_TASK=${PROFILE_TASK:-}\" \t\tpython \t; \tmake install; \t\tcd /; \trm -rf /usr/src/python; \t\tfind /usr/local -depth \t\t\\( \t\t\t\\( -type d -a \\( -name test -o -name tests -o -name idle_test \\) \\) \t\t\t-o \\( -type f -a \\( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \\) \\) \t\t\\) -exec rm -rf '{}' + \t; \t\tfind /usr/local -type f -executable -not \\( -name '*tkinter*' \\) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' \t\t| tr ',' '\\n' \t\t| sort -u \t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t\t| xargs -rt apk add --no-network --virtual .python-rundeps \t; \tapk del --no-network .build-deps; \t\tpython3 --version # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "RUN /bin/sh -c set -eux; \tfor src in idle3 pydoc3 python3 python3-config; do \t\tdst=\"$(echo \"$src\" | tr -d 3)\"; \t\t[ -s \"/usr/local/bin/$src\" ]; \t\t[ ! -e \"/usr/local/bin/$dst\" ]; \t\tln -svT \"$src\" \"/usr/local/bin/$dst\"; \tdone # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "ENV PYTHON_PIP_VERSION=23.0.1",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "ENV PYTHON_SETUPTOOLS_VERSION=65.5.1",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "ENV PYTHON_GET_PIP_SHA256=6fb7b781206356f45ad79efbb19322caa6c2a5ad39092d0d44d0fec94117e118",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "RUN /bin/sh -c set -eux; \t\twget -O get-pip.py \"$PYTHON_GET_PIP_URL\"; \techo \"$PYTHON_GET_PIP_SHA256 *get-pip.py\" | sha256sum -c -; \t\texport PYTHONDONTWRITEBYTECODE=1; \t\tpython get-pip.py \t\t--disable-pip-version-check \t\t--no-cache-dir \t\t--no-compile \t\t\"pip==$PYTHON_PIP_VERSION\" \t\t\"setuptools==$PYTHON_SETUPTOOLS_VERSION\" \t; \trm -f get-pip.py; \t\tpip --version # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-07-29T03:49:11Z",
+          "created_by": "CMD [\"python3\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-08-21T15:05:38Z",
+          "created_by": "/bin/sh -c pip install virtualenv"
+        },
+        {
+          "created": "2024-08-21T15:05:44Z",
+          "created_by": "/bin/sh -c apk add --update gcc libc-dev fortify-headers linux-headers \u0026\u0026 rm -rf /var/cache/apk/*"
+        },
+        {
+          "created": "2024-08-21T15:05:46Z",
+          "created_by": "/bin/sh -c apk add  curl"
+        },
+        {
+          "created": "2024-08-21T15:05:47Z",
+          "created_by": "/bin/sh -c apk add --no-cache librdkafka"
+        },
+        {
+          "created": "2024-08-21T15:05:48Z",
+          "created_by": "/bin/sh -c addgroup -g 1000 admingrp"
+        },
+        {
+          "created": "2024-08-21T15:05:48Z",
+          "created_by": "/bin/sh -c adduser -D -G admingrp admin"
+        },
+        {
+          "created": "2024-08-21T15:05:50Z",
+          "created_by": "/bin/sh -c apk update \u0026\u0026 apk upgrade --no-cache"
+        },
+        {
+          "created": "2024-08-21T15:05:50Z",
+          "created_by": "/bin/sh -c #(nop)  ARG user=admin",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-08-21T15:05:51Z",
+          "created_by": "/bin/sh -c #(nop)  ARG workdir=/home/admin",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-08-21T15:05:51Z",
+          "created_by": "|2 user=admin workdir=/home/admin /bin/sh -c chown :admingrp -R $workdir"
+        },
+        {
+          "created": "2024-08-21T15:05:52Z",
+          "created_by": "|2 user=admin workdir=/home/admin /bin/sh -c chmod g+w $workdir"
+        },
+        {
+          "created": "2024-08-21T15:05:52Z",
+          "created_by": "/bin/sh -c #(nop)  USER admin",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-08-21T15:05:53Z",
+          "created_by": "|2 user=admin workdir=/home/admin /bin/sh -c mkdir /home/admin/app"
+        },
+        {
+          "created": "2024-08-21T15:05:56Z",
+          "created_by": "|2 user=admin workdir=/home/admin /bin/sh -c virtualenv $workdir/env -p python"
+        },
+        {
+          "created": "2024-08-21T15:05:56Z",
+          "created_by": "/bin/sh -c #(nop)  ENV VIRTUAL_ENV=/home/admin/env",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-08-21T15:05:56Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PATH=/home/admin/env/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-08-21T15:05:56Z",
+          "created_by": "/bin/sh -c #(nop) COPY --chown=admin:admingrpfile:12346c826a4bba50c89a1dcdfb3728c4bf9d4391834fce85e5164696101a5845 in /home/admin/app/ "
+        },
+        {
+          "created": "2024-08-21T15:06:09Z",
+          "created_by": "|2 user=admin workdir=/home/admin /bin/sh -c pip install -r $workdir/app/requirements.txt --no-cache-dir"
+        },
+        {
+          "created": "2024-08-21T15:06:09Z",
+          "created_by": "/bin/sh -c #(nop) COPY --chown=admin:admingrpdir:aca8812f57e3ba648927dca4de9e66e2fac1b3a30e3845aeacd20463b6a540ac in /home/admin/app/ "
+        },
+        {
+          "created": "2024-08-21T15:06:09Z",
+          "created_by": "/bin/sh -c #(nop) WORKDIR /home/admin/app"
+        },
+        {
+          "created": "2024-08-21T15:06:09Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\" \"-c\" \"exec gunicorn --bind :$PORT --workers 2 --threads 16 app:app\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:78561cef0761903dd2f7d09856150a6d4fb48967a8f113f3e33d79effbf59a07",
+          "sha256:8a64f2dc1bc876b716afb3f88533fb249a6da9250e389277d83a301dc7e8ee6c",
+          "sha256:beaea7f540665e43687f4a035ae6b22c1462bb849f3bf3fc623fdf2aa8b45f46",
+          "sha256:192fe665d346cccde98d566136b1a4b3a75dd4df5eefc7a03842d7c683d4b0e0",
+          "sha256:e72fb7ff8294e26f802f61d891212dd8c7d6f9ef4fac7264aa7c382e61ecd168",
+          "sha256:ceeae985f8018e77804f3a6bbe8757958671f6b9481b7ee16511b5aa40627c15",
+          "sha256:05b19d827daadfd4388790a305cf9578ee12d7a5c4b0caa8c20ed315c34f5ba9",
+          "sha256:ba748be09e4037c77446fb60f8e62c1f5981f2644f38affa47881fcba6aba569",
+          "sha256:996847d7b02f821df0cc2f94a02cfefd4ace13fc41ce17049ce0e7899b31a7a5",
+          "sha256:70592b47912fe416e58c06c656608c2973ce16e1d2bc7d7098d49c8f168676e5",
+          "sha256:e873974840b3199579ed3bce49e9d1bf3747bc22b2ebe669e6e439403bf5adf3",
+          "sha256:5d439e848b5941cb3d20d1efc81a17984acbd04a0f89d2b69a1a74261e28290e",
+          "sha256:acc9d5ac7a5e2e47f6153afe7a896f5ddd64735c72ab815bd01cb04eb46188f3",
+          "sha256:584cc3fa3571c23d162ccfa062fad0d85024a75325292ffbf5e874ee1f8c3ffd",
+          "sha256:0ab3cfde250775fade219fd3d608ff0ee119554389581b58ae0b368e45a8a118",
+          "sha256:d25732cc9aab364cd99aa69e1bb155eab8bba97552f16bd9f63dd11232364f36",
+          "sha256:ad3a70faded3712b0ab424f404e1f13802b03c704a0938eaed6faeac97bb04c3",
+          "sha256:4d40b2de06d10986c01195ee10465bb4ec6b87550be0d0a759f30a7570e9fedb",
+          "sha256:25cd155cf85d5602bec608ca26a9cbc84694c9b63b29e22be36cc285a1f3e994"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/sh",
+          "-c",
+          "exec gunicorn --bind :$PORT --workers 2 --threads 16 app:app"
+        ],
+        "Env": [
+          "PATH=/home/admin/env/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "LANG=C.UTF-8",
+          "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+          "PYTHON_VERSION=3.10.14",
+          "PYTHON_PIP_VERSION=23.0.1",
+          "PYTHON_SETUPTOOLS_VERSION=65.5.1",
+          "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66d8a0f637083e2c3ddffc0cb1e65ce126afb856/public/get-pip.py",
+          "PYTHON_GET_PIP_SHA256=6fb7b781206356f45ad79efbb19322caa6c2a5ad39092d0d44d0fec94117e118",
+          "VIRTUAL_ENV=/home/admin/env"
+        ],
+        "Image": "sha256:cacec754f50b98a6cc0887fe8376086aea963969a8d03dc59ac556803b0867e2",
+        "User": "admin",
+        "WorkingDir": "/home/admin/app"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "us-east1-docker.pkg.dev/hclsw-gcp-hxdi/iem-dev/iem-scheduler:scheduler_dev_v1.0.0_fd6cdb6 (alpine 3.20.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-7264",
+          "PkgName": "curl",
+          "InstalledVersion": "8.9.0-r0",
+          "FixedVersion": "8.9.1-r0",
+          "Layer": {
+            "DiffID": "sha256:ba748be09e4037c77446fb60f8e62c1f5981f2644f38affa47881fcba6aba569"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-7264",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "curl: libcurl: ASN.1 date parser overread",
+          "Description": "libcurl's ASN1 parser code has the `GTime2str()` function, used for parsing an\nASN.1 Generalized Time field. If given an syntactically incorrect field, the\nparser might end up using -1 for the length of the *time fraction*, leading to\na `strlen()` getting performed on a pointer to a heap buffer area that is not\n(purposely) null terminated.\n\nThis flaw most likely leads to a crash, but can also lead to heap contents\ngetting returned to the application when\n[CURLINFO_CERTINFO](https://curl.se/libcurl/c/CURLINFO_CERTINFO.html) is used.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/07/31/1",
+            "https://access.redhat.com/security/cve/CVE-2024-7264",
+            "https://curl.se/docs/CVE-2024-7264.html",
+            "https://curl.se/docs/CVE-2024-7264.json",
+            "https://hackerone.com/reports/2629968",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-7264",
+            "https://ubuntu.com/security/notices/USN-6944-1",
+            "https://ubuntu.com/security/notices/USN-6944-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-7264"
+          ],
+          "PublishedDate": "2024-07-31T08:15:02.657Z",
+          "LastModifiedDate": "2024-08-12T17:30:51.88Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-8096",
+          "PkgName": "curl",
+          "InstalledVersion": "8.9.0-r0",
+          "FixedVersion": "8.10.0-r0",
+          "Layer": {
+            "DiffID": "sha256:ba748be09e4037c77446fb60f8e62c1f5981f2644f38affa47881fcba6aba569"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-8096",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "curl: OCSP stapling bypass with GnuTLS",
+          "Description": "When curl is told to use the Certificate Status Request TLS extension, often referred to as OCSP stapling, to verify that the server certificate is valid, it might fail to detect some OCSP problems and instead wrongly consider the response as fine.  If the returned status reports another error than 'revoked' (like for example 'unauthorized') it is not treated as a bad certficate.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-8096",
+            "https://curl.se/docs/CVE-2024-8096.html",
+            "https://curl.se/docs/CVE-2024-8096.json",
+            "https://hackerone.com/reports/2669852",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-8096",
+            "https://ubuntu.com/security/notices/USN-7012-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-8096"
+          ],
+          "PublishedDate": "2024-09-11T10:15:02.883Z",
+          "LastModifiedDate": "2024-09-11T16:26:11.92Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-6119",
+          "PkgName": "libcrypto3",
+          "InstalledVersion": "3.3.1-r3",
+          "FixedVersion": "3.3.2-r0",
+          "Layer": {
+            "DiffID": "sha256:78561cef0761903dd2f7d09856150a6d4fb48967a8f113f3e33d79effbf59a07"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-6119",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Possible denial of service in X.509 name checks",
+          "Description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-843"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6783",
+            "https://access.redhat.com/security/cve/CVE-2024-6119",
+            "https://bugzilla.redhat.com/2306158",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2306158",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6119",
+            "https://errata.almalinux.org/9/ALSA-2024-6783.html",
+            "https://errata.rockylinux.org/RLSA-2024:6783",
+            "https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f",
+            "https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6",
+            "https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2",
+            "https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0",
+            "https://github.com/openssl/openssl/security/advisories/GHSA-5qrj-vq78-58fj",
+            "https://linux.oracle.com/cve/CVE-2024-6119.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6783.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-6119",
+            "https://openssl-library.org/news/secadv/20240903.txt",
+            "https://ubuntu.com/security/notices/USN-6986-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-6119"
+          ],
+          "PublishedDate": "2024-09-03T16:15:07.177Z",
+          "LastModifiedDate": "2024-09-03T21:35:12.987Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-7264",
+          "PkgName": "libcurl",
+          "InstalledVersion": "8.9.0-r0",
+          "FixedVersion": "8.9.1-r0",
+          "Layer": {
+            "DiffID": "sha256:ba748be09e4037c77446fb60f8e62c1f5981f2644f38affa47881fcba6aba569"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-7264",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "curl: libcurl: ASN.1 date parser overread",
+          "Description": "libcurl's ASN1 parser code has the `GTime2str()` function, used for parsing an\nASN.1 Generalized Time field. If given an syntactically incorrect field, the\nparser might end up using -1 for the length of the *time fraction*, leading to\na `strlen()` getting performed on a pointer to a heap buffer area that is not\n(purposely) null terminated.\n\nThis flaw most likely leads to a crash, but can also lead to heap contents\ngetting returned to the application when\n[CURLINFO_CERTINFO](https://curl.se/libcurl/c/CURLINFO_CERTINFO.html) is used.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/07/31/1",
+            "https://access.redhat.com/security/cve/CVE-2024-7264",
+            "https://curl.se/docs/CVE-2024-7264.html",
+            "https://curl.se/docs/CVE-2024-7264.json",
+            "https://hackerone.com/reports/2629968",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-7264",
+            "https://ubuntu.com/security/notices/USN-6944-1",
+            "https://ubuntu.com/security/notices/USN-6944-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-7264"
+          ],
+          "PublishedDate": "2024-07-31T08:15:02.657Z",
+          "LastModifiedDate": "2024-08-12T17:30:51.88Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-8096",
+          "PkgName": "libcurl",
+          "InstalledVersion": "8.9.0-r0",
+          "FixedVersion": "8.10.0-r0",
+          "Layer": {
+            "DiffID": "sha256:ba748be09e4037c77446fb60f8e62c1f5981f2644f38affa47881fcba6aba569"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-8096",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "curl: OCSP stapling bypass with GnuTLS",
+          "Description": "When curl is told to use the Certificate Status Request TLS extension, often referred to as OCSP stapling, to verify that the server certificate is valid, it might fail to detect some OCSP problems and instead wrongly consider the response as fine.  If the returned status reports another error than 'revoked' (like for example 'unauthorized') it is not treated as a bad certficate.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-8096",
+            "https://curl.se/docs/CVE-2024-8096.html",
+            "https://curl.se/docs/CVE-2024-8096.json",
+            "https://hackerone.com/reports/2669852",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-8096",
+            "https://ubuntu.com/security/notices/USN-7012-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-8096"
+          ],
+          "PublishedDate": "2024-09-11T10:15:02.883Z",
+          "LastModifiedDate": "2024-09-11T16:26:11.92Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-45490",
+          "PkgName": "libexpat",
+          "InstalledVersion": "2.6.2-r0",
+          "FixedVersion": "2.6.3-r0",
+          "Layer": {
+            "DiffID": "sha256:beaea7f540665e43687f4a035ae6b22c1462bb849f3bf3fc623fdf2aa8b45f46"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-45490",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "libexpat: Negative Length Parsing Vulnerability in libexpat",
+          "Description": "An issue was discovered in libexpat before 2.6.3. xmlparse.c does not reject a negative length for XML_ParseBuffer.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-611"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+              "V3Score": 5.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6989",
+            "https://access.redhat.com/security/cve/CVE-2024-45490",
+            "https://bugzilla.redhat.com/2308615",
+            "https://bugzilla.redhat.com/2308616",
+            "https://bugzilla.redhat.com/2308617",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308615",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308616",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308617",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45490",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45491",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45492",
+            "https://errata.almalinux.org/8/ALSA-2024-6989.html",
+            "https://errata.rockylinux.org/RLSA-2024:6754",
+            "https://github.com/libexpat/libexpat/blob/R_2_6_3/expat/Changes",
+            "https://github.com/libexpat/libexpat/issues/887",
+            "https://github.com/libexpat/libexpat/pull/890",
+            "https://linux.oracle.com/cve/CVE-2024-45490.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6989.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-45490",
+            "https://ubuntu.com/security/notices/USN-7000-1",
+            "https://ubuntu.com/security/notices/USN-7000-2",
+            "https://ubuntu.com/security/notices/USN-7001-1",
+            "https://ubuntu.com/security/notices/USN-7001-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-45490"
+          ],
+          "PublishedDate": "2024-08-30T03:15:03.757Z",
+          "LastModifiedDate": "2024-09-04T14:28:19.313Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-45491",
+          "PkgName": "libexpat",
+          "InstalledVersion": "2.6.2-r0",
+          "FixedVersion": "2.6.3-r0",
+          "Layer": {
+            "DiffID": "sha256:beaea7f540665e43687f4a035ae6b22c1462bb849f3bf3fc623fdf2aa8b45f46"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-45491",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "libexpat: Integer Overflow or Wraparound",
+          "Description": "An issue was discovered in libexpat before 2.6.3. dtdCopy in xmlparse.c can have an integer overflow for nDefaultAtts on 32-bit platforms (where UINT_MAX equals SIZE_MAX).",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6989",
+            "https://access.redhat.com/security/cve/CVE-2024-45491",
+            "https://bugzilla.redhat.com/2308615",
+            "https://bugzilla.redhat.com/2308616",
+            "https://bugzilla.redhat.com/2308617",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308615",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308616",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308617",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45490",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45491",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45492",
+            "https://errata.almalinux.org/8/ALSA-2024-6989.html",
+            "https://errata.rockylinux.org/RLSA-2024:6754",
+            "https://github.com/libexpat/libexpat/blob/R_2_6_3/expat/Changes",
+            "https://github.com/libexpat/libexpat/issues/888",
+            "https://github.com/libexpat/libexpat/pull/891",
+            "https://linux.oracle.com/cve/CVE-2024-45491.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6989.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-45491",
+            "https://ubuntu.com/security/notices/USN-7000-1",
+            "https://ubuntu.com/security/notices/USN-7000-2",
+            "https://ubuntu.com/security/notices/USN-7001-1",
+            "https://ubuntu.com/security/notices/USN-7001-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-45491"
+          ],
+          "PublishedDate": "2024-08-30T03:15:03.85Z",
+          "LastModifiedDate": "2024-09-04T14:28:33.953Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-45492",
+          "PkgName": "libexpat",
+          "InstalledVersion": "2.6.2-r0",
+          "FixedVersion": "2.6.3-r0",
+          "Layer": {
+            "DiffID": "sha256:beaea7f540665e43687f4a035ae6b22c1462bb849f3bf3fc623fdf2aa8b45f46"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-45492",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "libexpat: integer overflow",
+          "Description": "An issue was discovered in libexpat before 2.6.3. nextScaffoldPart in xmlparse.c can have an integer overflow for m_groupSize on 32-bit platforms (where UINT_MAX equals SIZE_MAX).",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6989",
+            "https://access.redhat.com/security/cve/CVE-2024-45492",
+            "https://bugzilla.redhat.com/2308615",
+            "https://bugzilla.redhat.com/2308616",
+            "https://bugzilla.redhat.com/2308617",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308615",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308616",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2308617",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45490",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45491",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45492",
+            "https://errata.almalinux.org/8/ALSA-2024-6989.html",
+            "https://errata.rockylinux.org/RLSA-2024:6754",
+            "https://github.com/libexpat/libexpat/blob/R_2_6_3/expat/Changes",
+            "https://github.com/libexpat/libexpat/issues/889",
+            "https://github.com/libexpat/libexpat/pull/892",
+            "https://linux.oracle.com/cve/CVE-2024-45492.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6989.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-45492",
+            "https://ubuntu.com/security/notices/USN-7000-1",
+            "https://ubuntu.com/security/notices/USN-7000-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-45492"
+          ],
+          "PublishedDate": "2024-08-30T03:15:03.93Z",
+          "LastModifiedDate": "2024-09-04T14:28:41.76Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-6119",
+          "PkgName": "libssl3",
+          "InstalledVersion": "3.3.1-r3",
+          "FixedVersion": "3.3.2-r0",
+          "Layer": {
+            "DiffID": "sha256:78561cef0761903dd2f7d09856150a6d4fb48967a8f113f3e33d79effbf59a07"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-6119",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Possible denial of service in X.509 name checks",
+          "Description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-843"
+          ],
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6783",
+            "https://access.redhat.com/security/cve/CVE-2024-6119",
+            "https://bugzilla.redhat.com/2306158",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2306158",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6119",
+            "https://errata.almalinux.org/9/ALSA-2024-6783.html",
+            "https://errata.rockylinux.org/RLSA-2024:6783",
+            "https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f",
+            "https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6",
+            "https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2",
+            "https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0",
+            "https://github.com/openssl/openssl/security/advisories/GHSA-5qrj-vq78-58fj",
+            "https://linux.oracle.com/cve/CVE-2024-6119.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6783.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-6119",
+            "https://openssl-library.org/news/secadv/20240903.txt",
+            "https://ubuntu.com/security/notices/USN-6986-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-6119"
+          ],
+          "PublishedDate": "2024-09-03T16:15:07.177Z",
+          "LastModifiedDate": "2024-09-03T21:35:12.987Z"
+        }
+      ]
+    },
+    {
+      "Target": "Python",
+      "Class": "lang-pkgs",
+      "Type": "python-pkg",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-5752",
+          "PkgName": "pip",
+          "PkgPath": "usr/local/lib/python3.10/site-packages/pip-23.0.1.dist-info/METADATA",
+          "InstalledVersion": "23.0.1",
+          "FixedVersion": "23.3",
+          "Layer": {
+            "DiffID": "sha256:e72fb7ff8294e26f802f61d891212dd8c7d6f9ef4fac7264aa7c382e61ecd168"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5752",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Title": "pip: Mercurial configuration injectable in repo revision when installing via pip",
+          "Description": "When installing a package from a Mercurial VCS URL  (ie \"pip install \nhg+...\") with pip prior to v23.3, the specified Mercurial revision could\n be used to inject arbitrary configuration options to the \"hg clone\" \ncall (ie \"--config\"). Controlling the Mercurial configuration can modify\n how and which repository is installed. This vulnerability does not \naffect users who aren't installing from Mercurial.\n",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-77"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 3.3
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 3.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-5752",
+            "https://github.com/pypa/advisory-database/tree/main/vulns/pip/PYSEC-2023-228.yaml",
+            "https://github.com/pypa/pip",
+            "https://github.com/pypa/pip/commit/389cb799d0da9a840749fcd14878928467ed49b4",
+            "https://github.com/pypa/pip/pull/12306",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/622OZXWG72ISQPLM5Y57YCVIMWHD4C3U",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/622OZXWG72ISQPLM5Y57YCVIMWHD4C3U/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/65UKKF5LBHEFDCUSPBHUN4IHYX7SRMHH",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/65UKKF5LBHEFDCUSPBHUN4IHYX7SRMHH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FXUVMJM25PUAZRQZBF54OFVKTY3MINPW",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FXUVMJM25PUAZRQZBF54OFVKTY3MINPW/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KFC2SPFG5FLCZBYY2K3T5MFW2D22NG6E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KFC2SPFG5FLCZBYY2K3T5MFW2D22NG6E/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YBSB3SUPQ3VIFYUMHPO3MEQI4BJAXKCZ",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YBSB3SUPQ3VIFYUMHPO3MEQI4BJAXKCZ/",
+            "https://mail.python.org/archives/list/security-announce@python.org/thread/F4PL35U6X4VVHZ5ILJU3PWUWN7H7LZXL",
+            "https://mail.python.org/archives/list/security-announce@python.org/thread/F4PL35U6X4VVHZ5ILJU3PWUWN7H7LZXL/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5752",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5752"
+          ],
+          "PublishedDate": "2023-10-25T18:17:44.867Z",
+          "LastModifiedDate": "2024-06-10T18:15:24.66Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-6345",
+          "PkgName": "setuptools",
+          "PkgPath": "usr/local/lib/python3.10/site-packages/setuptools-65.5.1.dist-info/METADATA",
+          "InstalledVersion": "65.5.1",
+          "FixedVersion": "70.0.0",
+          "Layer": {
+            "DiffID": "sha256:e72fb7ff8294e26f802f61d891212dd8c7d6f9ef4fac7264aa7c382e61ecd168"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-6345",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory pip",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+          },
+          "Title": "pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools",
+          "Description": "A vulnerability in the package_index module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-94"
+          ],
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6311",
+            "https://access.redhat.com/security/cve/CVE-2024-6345",
+            "https://bugzilla.redhat.com/2292788",
+            "https://bugzilla.redhat.com/2297771",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2297771",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6345",
+            "https://errata.almalinux.org/8/ALSA-2024-6311.html",
+            "https://errata.rockylinux.org/RLSA-2024:6726",
+            "https://github.com/pypa/setuptools",
+            "https://github.com/pypa/setuptools/commit/88807c7062788254f654ea8c03427adc859321f0",
+            "https://github.com/pypa/setuptools/pull/4332",
+            "https://huntr.com/bounties/d6362117-ad57-4e83-951f-b8141c6e7ca5",
+            "https://linux.oracle.com/cve/CVE-2024-6345.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6726.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-6345",
+            "https://ubuntu.com/security/notices/USN-7002-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-6345"
+          ],
+          "PublishedDate": "2024-07-15T01:15:01.73Z",
+          "LastModifiedDate": "2024-07-15T13:00:34.853Z"
+        }
+      ]
+    }
+  ]
+}
